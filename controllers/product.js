@@ -4,7 +4,7 @@
 export const create = (req, res) => {
   // Get Body from req
   const body_name = req.body.name
-  const body_price = req.body.prices
+  const body_price = req.body.price
 
   res.json({
     name: body_name,
@@ -45,8 +45,8 @@ export const updateOne = (req, res) => {
   const id = req.params.id
 
   // Get body
-  const body_name = req.params.name
-  const body_price = req.params.price
+  const body_name = req.body.name
+  const body_price = req.body.price
 
   res.json({
     name: body_name,
